@@ -1,0 +1,2 @@
+- [ ] Fazer um sistema de criaçao de usuário
+- [ ] Fazer que o login no usuário entre com abra os cookies daquele usuário, permitindo que veja apenas as informações fornecidas pelo seu cookie
