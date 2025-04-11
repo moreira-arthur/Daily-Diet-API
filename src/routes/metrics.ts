@@ -132,13 +132,6 @@ export async function metricsRoute(app: FastifyInstance) {
     '/streak',
     { preHandler: [checkSessionIdExists] },
     async (request, reply) => {
-      //   const mealSchema = z.array(
-      //     z.object({
-      //       id: z.string(),
-      //       on_diet: z.boolean(),
-      //       date: z.number(),
-      //     })
-      //   )
       const meals = await knex('meals')
         .where({ user_id: request.user?.id })
         .select('id', 'on_diet', 'date')
